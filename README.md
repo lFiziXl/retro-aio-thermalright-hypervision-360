@@ -27,8 +27,8 @@ Your AIO liquid cooler has a screen. Most people waste it on a static logo — o
 | | Typical LCD Software | **retro_aio** |
 |---|---|---|
 | Runtime | Electron / Node | Single Rust static binary |
-| CPU at idle | 1–5% | **~0%** |
-| RAM | 150–400 MB | **~5 MB** |
+| CPU at idle | 1–5% | **~0%-1%** |
+| RAM | 150–400 MB | **~5-8 MB** |
 | Art | Shipped PNGs + JS framework | Programmatic, compiled into the binary |
 | Telemetry | Heavy vendor daemon + IPC | Direct `sysfs` / `nvidia-smi` |
 
