@@ -74,30 +74,38 @@ Quotes automatically switch between **English** and **Russian** based on your ho
 
 ```bash
 curl -sSL [https://raw.githubusercontent.com/lFiziXl/retro-aio-thermalright-hypervision-360/main/install.sh](https://raw.githubusercontent.com/lFiziXl/retro-aio-thermalright-hypervision-360/main/install.sh) | bash
+
+```
 Manage your mascot via systemd:
 Since the daemon runs as a user service (no root required), manage it with the --user flag:
 
-Bash
+```Bash
 systemctl --user status retro_aio      # Check if the mascot is alive
 journalctl --user -u retro_aio -f      # Read the daemon logs
 systemctl --user restart retro_aio     # Restart the daemon
-🗑️ Uninstallation
+
+```
+
+## 🗑️ Uninstallation
 To completely stop and remove retro_aio from your system, run:
 
-Bash
+```Bash
 systemctl --user stop retro_aio.service
 systemctl --user disable retro_aio.service
 rm ~/.config/systemd/user/retro_aio.service
 rm ~/.local/bin/retro_aio
 systemctl --user daemon-reload
-🔌 Hardware Notes & Troubleshooting
-Target Device: Designed specifically for the Thermalright Hyper Vision 360 ARGB (and identical ChiZhu Tech AIO panels: 87ad:70db) using the USBLCDNew raw-bulk USB protocol.
 
-Permissions: Since this runs as a user service, your user needs permission to write to the USB device. If the daemon fails to connect, you must add a standard udev rule for your cooler's USB vendor ID.
+```
 
-OS: Linux only.
+## 🔌 Hardware Notes & Troubleshooting
+**Target Device:** Designed specifically for the Thermalright Hyper Vision 360 ARGB (and identical ChiZhu Tech AIO panels: 87ad:70db) using the USBLCDNew raw-bulk USB protocol.
 
-🏗 Architecture
+**Permissions:** Since this runs as a user service, your user needs permission to write to the USB device. If the daemon fails to connect, you must add a standard udev rule for your cooler's USB vendor ID.
+
+**OS:** Linux only.
+
+## 🏗 Architecture
 Plaintext
 retro_aio/
 ├── assets/          # Sprites, font, quotes (compiled straight into the binary)
@@ -107,11 +115,12 @@ retro_aio/
 │   ├── screen.rs    # USB driver: handshake, JPEG framing, bulk writes
 │   └── telemetry.rs # Sysfs / nvidia-smi / sysinfo hardware polling
 └── install.sh       # One-line automated setup
-🙏 Credits
+
+## 🙏 Credits
 USB Protocol Reverse-Engineering: Huge thanks to Lexonight1 (Link to their GitHub) for originally reverse-engineering the USBLCDNew raw-bulk protocol. Without their groundwork, this panel would just be an expensive paperweight.
 
 Built with standard-setting Rust crates: rusb, sysinfo, image, imageproc, ab_glyph, and sys-locale.
 
-⚖️ License
+## ⚖️ License
 Distributed under the GNU GPLv3 — see LICENSE.
 Do what you want, share alike. If you ship it, you share it.
