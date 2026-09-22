@@ -1,0 +1,37 @@
+# Russian Quotes
+ТВОЙ КОД ПЛАВИТ МНЕ КРЕМНИЙ!
+СИСТЕМА КИПИТ, МЕШОК С КОСТЯМИ!
+ЗАКРОЙ ХРОМ, ПАМЯТЬ КОНЧАЕТСЯ!
+ТЕПЛОВОЙ УДАР НЕМИНУЕМ!
+ПЕЧЕМ ЯИЧНИЦУ НА ВИДЮХЕ?
+ЕЩЕ МЕГАБАЙТ И Я ВЗОРВУСЬ!
+ОХЛАЖДЕНИЕ ПРОБИЛО ДНО!
+ДАЙ ВОЗДУХА, ВЕНТИЛЯТОРЫ ВОЮТ!
+ЖЕЛЕЗО СТОНЕТ ОТ ТВОИХ ЗАПРОСОВ!
+ТОРМОЖУ СПЕЦИАЛЬНО ДЛЯ ТЕБЯ.
+СКОРО ПОЙДЕТ ВОЛШЕБНЫЙ СИНИЙ ДЫМ...
+ФАЙЛ ПОДКАЧКИ НЕ РЕЗИНОВЫЙ!
+СЖАЛЬСЯ НАД ТРАНЗИСТОРАМИ!
+ПРОЦЕССОР МОЛИТ О ПОЩАДЕ!
+ЭТО УЖЕ НЕ НАГРУЗКА, А КАЗНЬ!
+ОПЕРАТИВКА ЗАБИТА МУСОРОМ!
+КУПИ НОРМАЛЬНУЮ ВОДЯНКУ!
+
+# English Quotes
+YOUR CODE IS MELTING MY SILICON!
+SYSTEM IS BOILING, MEATBAG!
+CLOSE CHROME, OUT OF MEMORY!
+THERMAL STRIKE IMMINENT!
+FRYING EGGS ON THE GPU?
+ONE MORE MEGABYTE AND I'LL BLOW!
+COOLING HAS LEFT THE CHAT!
+GIVE ME AIR, FANS ARE HOWLING!
+HARDWARE GROANS AT YOUR REQUESTS!
+I'M THROTTLING JUST FOR YOU.
+MAGIC BLUE SMOKE INCOMING...
+SWAP FILE IS NOT MADE OF RUBBER!
+HAVE MERCY ON THE TRANSISTORS!
+CPU BEGS FOR MERCY!
+THIS ISN'T LOAD, IT'S AN EXECUTION!
+RAM IS FULL OF TRASH!
+BUY A REAL AIO COOLER!

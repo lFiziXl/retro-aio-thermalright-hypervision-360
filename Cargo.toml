@@ -1,0 +1,16 @@
+[package]
+name = "retro_aio"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rusb = "0.9"
+sysinfo = "0.39.6"
+image = "0.25"
+imageproc = "0.25"
+rusttype = "0.9"
+# imageproc 0.25's draw_text_mut is built on ab_glyph, so the text font is
+# loaded through it (see src/render.rs).
+ab_glyph = "0.2"
+# System locale detection — picks the quote language (ru vs en) at startup.
+sys-locale = "0.3"
