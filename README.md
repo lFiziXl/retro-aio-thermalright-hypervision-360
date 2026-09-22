@@ -121,7 +121,7 @@ retro_aio/
 ## 🙏 Credits
 **USB Protocol Reverse-Engineering:** Huge thanks to **Lexonight1** (https://github.com/Lexonight1) for originally reverse-engineering the USBLCDNew raw-bulk protocol. Without their groundwork, this panel would just be an expensive paperweight.
 
-Built with standard-setting Rust crates: rusb, sysinfo, image, imageproc, ab_glyph, and sys-locale.
+**Built with standard-setting Rust crates:** rusb, sysinfo, image, imageproc, ab_glyph, and sys-locale.
 
 ## ⚖️ License
 Distributed under the GNU GPLv3 — see LICENSE.
