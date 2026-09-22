@@ -73,7 +73,7 @@ Quotes automatically switch between **English** and **Russian** based on your ho
 > One command. That's it. The script installs Rust (if missing), compiles the binary tailored to your machine, sets up a background service, and cleans up after itself.
 
 ```bash
-curl -sSL [https://raw.githubusercontent.com/lFiziXl/retro-aio-thermalright/main/install.sh](https://raw.githubusercontent.com/lFiziXl/retro-aio-thermalright/main/install.sh) | bash
+curl -sSL [https://raw.githubusercontent.com/lFiziXl/retro-aio-thermalright-hypervision-360/main/install.sh](https://raw.githubusercontent.com/lFiziXl/retro-aio-thermalright-hypervision-360/main/install.sh) | bash
 Manage your mascot via systemd:
 Since the daemon runs as a user service (no root required), manage it with the --user flag:
 
@@ -108,7 +108,7 @@ retro_aio/
 │   └── telemetry.rs # Sysfs / nvidia-smi / sysinfo hardware polling
 └── install.sh       # One-line automated setup
 🙏 Credits
-USB Protocol Reverse-Engineering: Huge thanks to [ВСТАВЬ ИМЯ АВТОРА ТУТ] ([Link to their GitHub](ВСТАВЬ ССЫЛКУ ТУТ)) for originally reverse-engineering the USBLCDNew raw-bulk protocol. Without their groundwork, this panel would just be an expensive paperweight.
+USB Protocol Reverse-Engineering: Huge thanks to Lexonight1 (Link to their GitHub) for originally reverse-engineering the USBLCDNew raw-bulk protocol. Without their groundwork, this panel would just be an expensive paperweight.
 
 Built with standard-setting Rust crates: rusb, sysinfo, image, imageproc, ab_glyph, and sys-locale.
 
