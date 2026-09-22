@@ -106,6 +106,7 @@ systemctl --user daemon-reload
 **OS:** Linux only.
 
 ## 🏗 Architecture
+```Bash
 Plaintext
 retro_aio/
 ├── assets/          # Sprites, font, quotes (compiled straight into the binary)
@@ -115,6 +116,7 @@ retro_aio/
 │   ├── screen.rs    # USB driver: handshake, JPEG framing, bulk writes
 │   └── telemetry.rs # Sysfs / nvidia-smi / sysinfo hardware polling
 └── install.sh       # One-line automated setup
+```
 
 ## 🙏 Credits
 USB Protocol Reverse-Engineering: Huge thanks to Lexonight1 (Link to their GitHub) for originally reverse-engineering the USBLCDNew raw-bulk protocol. Without their groundwork, this panel would just be an expensive paperweight.
