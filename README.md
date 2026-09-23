@@ -43,6 +43,7 @@ Your AIO liquid cooler has a screen. Most people waste it on a static logo — o
 - **CPU:** Temperature and Frequency.
 - **GPU:** Temperature and VRAM usage.
 - **RAM Usage:** Tracks the Used/Total ratio.
+- **Clock:** Real-time local system time (HH:MM:SS).
 
 **Tracked in the background (to drive mascot states):**
 - **GPU Load:** Supports both AMD (via `amdgpu` sysfs) and NVIDIA (via `nvidia-smi`). The daemon takes the *max* of both sources, so hybrid rigs report honestly.
