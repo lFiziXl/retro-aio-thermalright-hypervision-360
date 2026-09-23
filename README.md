@@ -75,7 +75,7 @@ Quotes automatically switch between **English** and **Russian** based on your ho
 > One command. That's it. The script installs Rust (if missing), compiles the binary tailored to your machine, sets up a background service, and cleans up after itself.
 
 ```bash
-curl -sSL [https://raw.githubusercontent.com/lFiziXl/retro-aio-thermalright-hypervision-360/main/install.sh](https://raw.githubusercontent.com/lFiziXl/retro-aio-thermalright-hypervision-360/main/install.sh) | bash
+curl -sSL https://raw.githubusercontent.com/lFiziXl/retro-aio-thermalright-hypervision-360/main/install.sh | bash
 
 ```
 Manage your mascot via systemd:
