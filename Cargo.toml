@@ -14,3 +14,5 @@ rusttype = "0.9"
 ab_glyph = "0.2"
 # System locale detection — picks the quote language (ru vs en) at startup.
 sys-locale = "0.3"
+# Local time for the on-screen HH:MM:SS clock.
+chrono = "0.4"

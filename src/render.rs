@@ -48,6 +48,12 @@ const BUBBLE_TEXT: Rgba<u8> = Rgba([0, 0, 0, 255]);
 const FONT_PX: f32 = 40.0;
 /// Speech-bubble text size, in px.
 const BUBBLE_FONT_PX: f32 = 22.0;
+/// Digital clock text size, in px (32 px = a native VT323 pixel size;
+/// larger than the bubble text, smaller than the 40 px telemetry line).
+const CLOCK_FONT_PX: f32 = 32.0;
+/// Y of the clock: just below the top HUD border (10 px inset + 1 px line),
+/// in px.
+const CLOCK_Y: i32 = 16;
 /// Bottom margin for the telemetry line, in px. (12 px base + 5 px so the
 /// text clears the cyan HUD frame border on the physical panel, + 7 px so
 /// the readout sits higher on the panel than before.)
@@ -226,6 +232,14 @@ pub fn draw_frame(
     //    are plain pixel writes, one head glyph per drop — so the mascot,
     //    speech bubble, telemetry and HUD all render on top of it.
     matrix.tick(&mut img, &font);
+
+    // 3b. Digital clock (HH:MM:SS), cyan, horizontally centered just
+    //     below the top HUD border.
+    let clock_scale = ab_glyph::PxScale { x: CLOCK_FONT_PX, y: CLOCK_FONT_PX };
+    let clock = chrono::Local::now().format("%H:%M:%S").to_string();
+    let (clock_w, _) = text_size(clock_scale, &font, &clock);
+    let clock_x = (WIDTH as i32 - clock_w as i32) / 2;
+    draw_text_mut(&mut img, CYAN, clock_x, CLOCK_Y, clock_scale, &font, &clock);
 
     // 4. Mascot sprite in the center with a slow sine-wave vertical bounce
     //    driven by wall-clock time (~1.26 s per full bounce cycle).
