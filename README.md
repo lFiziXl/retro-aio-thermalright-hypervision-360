@@ -42,10 +42,11 @@ Your AIO liquid cooler has a screen. Most people waste it on a static logo — o
 **Displayed on screen:**
 - **CPU:** Temperature and Frequency.
 - **GPU:** Temperature and VRAM usage.
+- **RAM Usage:** Tracks the Used/Total ratio.
 
 **Tracked in the background (to drive mascot states):**
-- **GPU Load:** Supports both AMD (via `amdgpu` sysfs) and NVIDIA (via `nvidia-smi`). The daemon takes the *max* of both sources, so hybrid laptops/rigs report honestly.
-- **RAM Usage:** Tracks the Used/Total ratio.
+- **GPU Load:** Supports both AMD (via `amdgpu` sysfs) and NVIDIA (via `nvidia-smi`). The daemon takes the *max* of both sources, so hybrid rigs report honestly.
+
 - Sensor discovery is driver-based, avoiding fragile `hwmonN` index shifts after Linux kernel updates.
 
 ### 🌐 Cyberpunk Visuals
