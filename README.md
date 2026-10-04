@@ -43,6 +43,7 @@ Your AIO liquid cooler has a screen. Most people waste it on a static logo — o
 - **CPU:** Temperature and Frequency.
 - **GPU:** Temperature and VRAM usage.
 - **RAM Usage:** Tracks the Used/Total ratio.
+- **Clock:** Real-time local system time (HH:MM:SS).
 
 **Tracked in the background (to drive mascot states):**
 - **GPU Load:** Supports both AMD (via `amdgpu` sysfs) and NVIDIA (via `nvidia-smi`). The daemon takes the *max* of both sources, so hybrid rigs report honestly.
@@ -74,7 +75,7 @@ Quotes automatically switch between **English** and **Russian** based on your ho
 > One command. That's it. The script installs Rust (if missing), compiles the binary tailored to your machine, sets up a background service, and cleans up after itself.
 
 ```bash
-curl -sSL [https://raw.githubusercontent.com/lFiziXl/retro-aio-thermalright-hypervision-360/main/install.sh](https://raw.githubusercontent.com/lFiziXl/retro-aio-thermalright-hypervision-360/main/install.sh) | bash
+curl -sSL https://raw.githubusercontent.com/lFiziXl/retro-aio-thermalright-hypervision-360/main/install.sh | bash
 
 ```
 Manage your mascot via systemd:
@@ -122,7 +123,7 @@ retro_aio/
 ## 🙏 Credits
 **USB Protocol Reverse-Engineering:** Huge thanks to **Lexonight1** (https://github.com/Lexonight1) for originally reverse-engineering the USBLCDNew raw-bulk protocol. Without their groundwork, this panel would just be an expensive paperweight.
 
-**Built with standard-setting Rust crates:** rusb, sysinfo, image, imageproc, ab_glyph, and sys-locale.
+**Built with standard-setting Rust crates:** rusb, sysinfo, image, imageproc, ab_glyph, sys-locale and chrono.
 
 ## ⚖️ License
 Distributed under the GNU GPLv3 — see LICENSE.
