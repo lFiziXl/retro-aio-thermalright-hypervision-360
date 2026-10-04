@@ -2,6 +2,8 @@
 
 # ⚡ RETRO AIO
 
+![Retro AIO Mascot Screenshot](assets/screenshot.jpg)
+
 ### The mascot daemon for your Thermalright Hyper Vision 360 ARGB LCD cooler.
 
 **One small Rust binary. ~0% CPU. ~5 MB RAM. Zero Electron. Zero vendor bloat.**
